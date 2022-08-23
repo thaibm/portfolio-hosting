@@ -1,0 +1,931 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<meta name="author" tittle="franky75"/>
+			<meta name="description" title="Make a Portfolio - franky75"/>
+			<meta name="keywords" title="2d, design, figma, landing, mobile, portfolio, ui, ux, web design "/>
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title> Make a Portfolio - franky75</title>
+			<link rel="stylesheet" href="nomarlize.css"/>
+			<style>
+				*{
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+				}
+				body{
+					font-family: helvetica, sans-serif;
+					font-weight: 300;
+					text-align: center;
+					color: #797979;
+					margin: 100px;
+					padding: 0;
+				}
+				.red{
+					border: 1px solid red;
+				}
+				.green{
+					border: 1px solid green;
+				}
+
+/*============Thumbnail page==========*/
+				.thumbnail{
+					background: url('background-thumbnail.png') center top no-repeat;
+					height: 1175px;
+					width: 1920px;
+					padding: 5px;
+					margin-bottom: 30px;
+				}
+				.container{
+					width: 1440px;
+					height: 1135px;
+					margin: auto;
+				}
+				.menu{
+				padding-top: 30px;
+				padding-bottom:102px;
+				display: block;
+				}
+				.about a{
+					font-weight: bold;
+					color:#fff;
+				}
+				.menu li{
+					list-style-type: none;
+					display: inline;
+					margin-left:  60px;
+				}
+				li a{
+					text-decoration: none;
+					color: #BEBCBC;
+					transition: all 1s;
+					-moz-transition: all 1s;
+					-webkit-transition: all 1s;
+				}
+				li a:hover{
+					color: #06E0D3;
+				}
+
+
+	/*=====================Avatar===================*/
+				.info-container{
+					width:1247px;
+					height: 723px;
+					position: absolute;
+					margin-top: 47px;
+					margin-left:85px;
+					margin: auto;
+				}
+				.rectangular{
+					background: #FFFFFF center center no-repeat;
+					border-radius: 100px;
+					transform: rotate(45deg);
+					height: 440px;
+					width: 440px;
+					float: left;
+					display: inline;
+					margin-top: 102px;
+					margin-left: 13px;
+				}
+				.pic-rectangular {
+				    height: 725px;
+				    width: 650px;
+				    display: inline;
+				    float: left;
+				    margin-top: -85px;
+				    margin-left: 166px;
+				}
+				.avatar{
+					  width: 321px;
+					  height: 621px;
+					  position: absolute;
+					  margin-left: 78px;
+   					  margin-top: 3px;
+				}
+				.figma-icon{
+					position: absolute;
+					margin-left: 440px;
+   					margin-top: 63px;
+
+				}
+				.PS-icon{
+				    height: 725px;
+				    width: 650px;
+				    position: absolute;
+				    margin-top: 173px;
+				    margin-left: -315px;
+				}
+
+	/*=================Content/Button===============*/
+				.head-content{
+					position: absolute;
+					width: 449px;
+					height: 228px;
+					left: 810px;
+					top: 0px;
+					font-family: Jost, helvetica,sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 56px;
+					color: #FFFFFF;
+					text-align: left;
+
+
+				}
+				.btn{
+					position: absolute;
+					width: 750px;
+					height: 250px;
+					left: 700px;
+					top: 240px;
+					display: inline;
+
+					color: #fff;				
+					text-decoration: none;
+				}
+				.btn button{
+					background: #5C5959;
+					padding: 20px;
+					border-radius: 10px;
+					display: inline;
+					border: 0;
+					margin: 10px;
+					
+					text-align: left;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size:24px;
+					cursor: pointer;
+					transition: all 1s;
+					-moz-transition: all 1s;
+					-webkit-transition: all 1s;
+				}
+				.btn button:hover{
+					background: #e9eba6;
+				}
+				button a{
+					text-decoration: none;
+					color: #fff;
+				}
+				button.btn-hireme{
+					background: #5E96EB;
+					width: 251px;
+					height: 60px;
+				}
+				button.btn-Portfolio{
+					width: 251px;
+					height: 60px;
+				}
+				button.btn-telegram{
+					width: 522px;
+					height: 60x;
+				
+				}
+				.btn img{
+					margin-left:61px;
+				}
+				button #telegram-icon {
+					margin-left: 0px;
+					padding-right: 25px;
+					margin-top: -60px;
+					padding-left: 12px;
+				}
+				a.btn-telegram{
+					margin-left:60px;
+				}
+				img#arrow-icon{
+					margin-left:87px;
+				}
+		/*=================Quote===============*/
+				.quote{
+					position: absolute;
+					width: 1317px;
+					height: 316px;
+					left: 245px;
+					top: 900px;
+					margin-left: 215px;
+					line-height: 1.5em;
+					text-align: left;
+					font-family: Jost, "Helvetica Neue",Arial, Helvetica, sans-serif;
+					font-size: 36px;
+
+				}
+				span .author{
+					font-size: 36px;
+					color: #F8F2F2;
+					margin-bottom: 50px;
+
+				}
+				blockquote.quote-content {
+				    font-size: 42px;
+				    color: #fff;
+					font-style: italic;
+				
+				}
+/*============Landing page============*/
+				.landing-page{
+					width: 1440px;
+					height: 2683px;
+					background: #282828;
+					display: inline-block;
+					float: left;
+					margin:0;
+					padding:0;
+				}
+				.lad-container{
+					width: 1247px;
+					height: 100%;
+					margin: auto;
+				}
+
+/*==========Landing menu==================*/
+				.lad-menu{
+					height:29px;
+					width:100%;
+					margin:auto;
+				}
+				.lad-menu li{
+					height: 29px;
+					width: auto;
+					padding: 20px;
+					margin-bottom:20px;
+
+					list-style-type: none;
+					display: inline;
+					margin-left:  60px;
+					text-align: center;
+				}	
+				.lad-menu{
+					height: 65px;
+					width:100%;
+					display: inline-block;
+				}
+				.lad-about a{
+					font-weight: bold;
+					color:rgb(250, 249, 249);
+					transition: all 1s;
+					-moz-transition: all 1s;
+					-webkit-transition: all 1s;
+				}
+				.lad-about a:hover{
+					color:#06E0D3;
+				}
+	/*============Info============*/
+				.lad-info-container{
+					width: 1247px;
+					height: 724px;
+					position: absolute;
+					margin-top: 33px;
+					margin-left:0px;
+
+				}
+
+				.lad-group-avatar{
+					width: 652px;
+					height: auto;
+					position:absolute;
+					margin-top:0px;
+					margin-left:0px;
+				}
+				.lad-figma-icon {
+				position: absolute;
+				margin-top: -573px;
+				margin-left: 540px;
+				}
+				.lad-PS-icon {
+					position: absolute;
+					margin-top: -480px;
+					margin-left: 80px;
+				}	
+				.lad-head-content{
+						width: 449px;
+						height: 228px;
+						position: absolute;
+						margin-left: 725px;
+						margin-top: 178px;
+						font-size: 56px;
+						color: #fff;
+						text-align: left;					
+				}
+				.lad-pic-rectangular {
+  					  margin-top: -75px;
+				}
+/*============Landing buttons =============================*/
+				.lad-btn{
+					height: 150px;
+					width: 545px;
+					position:absolute;
+					margin-top: 419px;
+    				margin-left: 715px;
+
+				}
+				.lad-btn button{
+					font-size: 24px;
+					display:inline;
+
+					border: none;
+					border-radius:10px;
+					padding:10px;
+					margin:10px;
+					cursor: pointer;
+					transition: all 1s;
+					-moz-transiton: all 1s;
+					-webkit-transiton: all 1s;
+				}
+				.lad-btn button:hover{
+					background-color: #e9eba6;
+
+				}
+				button.lad-btn-hireme {
+					background:#5E96EB;
+					width: 251px;
+					height: 60px;
+					float: left;
+					}
+				button.lad-btn-Portfolio{
+					background-color: #5C5959;
+					width:251px;
+					height: 60px;
+					float: left;
+				}
+				button.lad-btn-telegram{
+					background-color: #5C5959;
+					width: 522px;
+					height: 60px;
+					float: left;
+				}
+				.lad-btn img{
+					margin-left: 60px;
+				}
+				button.lad-btn-telegram{
+					text-align: left;
+					padding-left: 70px;
+					display: inline;
+				}
+				img#telegram-landing{
+					position:absolute;
+					display:inline;
+					margin-left:-50px;
+
+				}
+				img#arrow-landing{
+					position:absolute;
+					display: inline;
+					margin-left: 110px;
+					margin-top:10px;
+				}
+/*==========Landing Quote==============*/
+				.lad-quote{
+					height: 316px;
+					width:1193px;
+
+					position:absolute;
+					margin-top:760px;
+					margin-left:38px;
+
+					font-family: Jost, sans-serif;
+					text-align: left;
+
+				}
+				span.lad-author{
+					font-size:36px;
+					color:	#9c9c9c;
+					
+				}
+				blockquote.lad-quote-content {
+					font-size: 38px;
+					line-height:1.5em;
+					color: #fff;
+					font-style:italic;
+					font-family: Jost, helvetica, sans-serif;
+				}
+/*==========Portfolio =================*/
+				.lad-Portfolio{
+					width: 1247px;
+					height: 578px;
+					margin: auto;
+					position:absolute;
+					margin-top:1219px;
+				}
+				h2.lad-header-Portfolio {
+					font-size: 48px;
+					color: #fff;
+					text-align: left;
+					padding-bottom: 60px;
+					margin: 0;
+					font-family: Jost;
+				}
+				.lad-Portfolio ul{
+					list-style-type: none;
+					height: 329px;
+					width: 1194px;
+					display:flex;
+					justify-content:space-between;
+				}
+				.lad-Portfolio ul a{
+					color: #fff;
+					font-weight: bold;
+					line-height:2.5em;
+					font-size: 36px;
+					
+				}
+				.btn-Portfolio {
+					height:60px;
+					width:1194px;
+	
+					display: flex;
+					justify-content: space-evenly;
+					cursor: pointer;
+				}
+				.see-more{
+					font-size: 32px;
+					color:#F8F2F2;
+					text-align: center;
+					margin-top:15px;
+				}
+				button.btn-Dribbble{
+					width:251px;
+					height: 60px;
+					background:#797979;
+					border: none;
+					border-radius: 10px;
+				}
+				button.btn-Behance{
+					width:251px;
+					height: 60px;
+					background:#5E96EB;
+					border: none;
+					border-radius: 10px;
+				}
+				button.btn-Figma{
+					width:251px;
+					height: 60px;
+					background:#797979;
+					border: none;
+					border-radius: 10px;
+				}
+				button img{
+					margin-left: 60px;
+				}
+	/*==========Landing Reference =================*/
+				.Reference{
+					height: 289px;
+					width: 1200px;
+					margin: auto;
+					margin-top: 1964px;
+					margin: left;
+					margin-left: 79px;
+				}
+				h2.head-Reference{
+					font-size: 48px;
+					color: #fff;
+					text-align: left;
+					padding-bottom: 40px;
+					margin: 0;
+					font-family: Jost;
+					display: block;
+				}
+				div.port-box{
+					display: flex;
+					justify-content: space-between;
+					line-height: 1.4em;
+
+				}
+				div.port-Linkedln{
+					color: #9c9c9c;
+					height:180px;
+					width:360px;
+					background:#525252;
+					border-radius:15px;
+					
+					text-align: left;
+					padding: 26px 20px;
+				}
+				button.btn-linkedln{
+					background-color: #505050;
+					border:none;
+					height:60px;
+					width:251px;
+					margin-top: 10px;
+					text-align: center;
+				}
+				.port-box div strong{
+					color: #fff;
+				}
+				.port-box div img#phone{
+					position:absolute;
+					margin-left: 0px;
+   					margin-top: 10px;
+				}
+				div.port-Telegram{
+					color: #9c9c9c;
+					height:180px;
+					width:360px;
+					background:#525252;
+					border-radius:15px;
+					
+					text-align: left;
+					padding: 26px 20px;
+				}
+				button.port-btn-telegram{
+					background-color: #505050;
+					border:none;
+					height:60px;
+					width:251px;
+					margin-top: 10px;
+					text-align: center;
+				}
+				div.more-information{
+					height:180px;
+					width:360px;
+					background:#525252;
+					border-radius:15px;
+					
+					text-align: center;
+					padding-top:50px;
+					display: block;
+				
+				}
+				div button.port-btn-plus{
+					display: contents;
+				}
+				.more-information img a{
+					position: absolute;
+					margin-left:0;
+				}
+				button img#port-plus{
+					margin-left:0;
+					cursor: pointer;
+				}
+				button img#port-plus:hover{
+					background-color: #06E0D3;
+				}
+				.more-information img a{
+					background-color: #06E0D3;
+				}
+/*==========Landing Footer =====*/
+				.Footer{
+					height:310px;
+					width:1440px;
+					margin-left:-96px;
+					background-color: #505050;
+
+					color:#BEBCBC;
+					font-size: 24px;
+					font-family: Jost, Arial, Helvetica, sans-serif;
+					text-align: left;
+					border-top-left-radius: 50px;
+					border-top-right-radius: 50px;
+					margin-top: 120px;
+				}
+				.footer-1{
+					height:200px;
+					width:210px;
+					position:absolute;
+					margin-left:118px;
+					margin-top:50px;
+					color:#fff;
+				
+				}
+				.footer-2{
+					height:200px;
+					width:210px;
+					position:absolute;
+					margin-left:939px;
+					margin-top:50px;
+
+					color: #fff;
+					line-height:1.5em;
+
+								
+				
+				}.footer-3{
+					height:200px;
+					width:210px;
+					position:absolute;
+					margin-left:1190px;
+					margin-top:50px;
+					color:#fff;
+					line-height:1.5em;
+				}
+				.footer-2 a{
+					text-decoration: none;
+					color: #BEBCBC;
+				}
+				.footer-3 a{
+					text-decoration: none;
+					color: #BEBCBC;
+				}
+/*==========Mobi-page========================*/
+			section.mobi-page{
+				width: 375px;
+				display: inline;
+				height: 4153px;
+				float: left;
+				background: #282828;
+				margin-left:115px;
+			}
+	/*==========Mobi-avatar==========*/
+			.mobi-ava{
+					height: 289px;
+					width: 314px;
+					margin: auto;
+					position: absolute;
+					margin-top: 31px;
+					margin-left:43px;					
+				}
+				.mobi-ava-img{
+					position:absolute;
+					margin-top: 0px;
+					margin-left:0px;
+				}
+				.mobi-figma-icon img {
+					margin-left: 183px;
+					margin-top: 42px;
+				}
+				.mobi-PS-icon{
+					position:relative;
+					margin-top: 0px;
+					margin-left: -204px;
+				}
+				.mobi-hello{
+					color:#fff;
+					font-size: 36px;
+					text-align: left;
+					font-family: Jost, Arial, Helvetica, sans-serif;
+
+					margin-top: 355px;
+					margin-left: 43px;
+					margin-bottom:30px;
+					
+				}
+				.mobi-btn{
+					height: 220px;
+					width: 289px;
+				
+										
+				}
+						
+				button.mobi-btn-hireme{
+					background-color:#5E96EB;
+					height: 60px;
+					width: 289px;
+					margin-left: 43px;
+					border: none;
+					border-radius: 10px;
+					margin-bottom:20px;
+					
+				}
+				button.mobi-btn-Portfolio{
+					background-color:#5C5959;
+					height: 60px;
+					width: 289px;
+					margin-left: 43px;
+					border: none;
+					border-radius: 10px;
+					margin-bottom:20px;
+					
+				}
+			
+				button.mobi-btn-telegram{
+					background-color:#5C5959;
+					height: 60px;
+					width: 289px;
+					margin-left: 43px;
+					border: none;
+					border-radius: 10px;
+					margin-bottom:60px;
+					
+				}
+				p.mobi-author{
+					text-align: left;
+					position: absolute;
+					margin-left: 43px;
+					margin-bottom: 15px ;
+					display: block;
+					width: 100%;
+				}		
+				blockquote.mobi-quote-content{
+					text-align: left;
+					color: #fff;
+					font-size: 20px;
+					font-style:italic ;
+					display: block;
+					
+
+				}
+				
+
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</style>
+		</head>
+
+
+		<body>
+			<div class="border-all">
+				<section class="thumbnail">
+					<div class="container">
+						<div class="menu">
+							<ul>
+								<li class="about"><a href="#">About</a> </li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Reference</a></li>
+								<li><a href="#">Contact </a> </li>
+							</ul>
+						</div>
+						<div class="info-container">
+							<div class="pic-rectangular">
+								<div class="rectangular"></div>
+								<div class="avatar"> <img src="avatar.png" alt="Avatar" width="321" height="621"/> </div>
+								<div class="figma-icon"><img src="Figma-icon.png" alt="figma-icon"/> </div>
+								<div class="PS-icon"><img src="PS-icon.png"/></div>
+							</div>
+						
+							<div class="head-content">
+								Hello, I'm a <br/> <strong>UX/UI Designer</strong> <br/>
+								Illia Frunza
+							</div>
+							<div class="btn">
+								<button class="btn-hireme"> <a href="#">Hire me</a><img src="Arrow.svg"></button>
+								<button class="btn-Portfolio"> <a href="#">Portfolio</a> <img src="Arrow.svg"></button>
+								<button class="btn-telegram"><img id="telegram-icon" src="telegram.svg"> <a href="#">Get in touch by Telegram</a><img id="arrow-icon" src="Arrow.svg"></button>				
+							</div>
+					</div>
+
+						<div class="quote">
+							<span class="author">Massimo Vignelli:</span>
+							<blockquote class="quote-content" cite="#">“The life of a designer is a constant struggle. Fight against ugliness. Just like a doctor fights a disease. For us, visual disease is what we have around us, and what we are trying to do is, one way or another, cure the environment through design.”
+							</blockquote>
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="landing-page">
+					<div class="lad-container">
+						<div class="lad-menu">
+							<ul class="lad-list-menu">
+								<li class="lad-about"><a href="#"> About </a> </li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Reference</a></li>
+								<li><a href="#">Contact </a> </li>
+							</ul>
+						</div>
+						<div class="lad-info-container">
+							<div class="lad-group-avatar">
+								<div class="lad-pic-rectangular"><img class="lad-ava" src="lad-ava.png"></div>
+								<div class="lad-figma-icon"><img src="Figma-icon.png" alt="figma-icon"/> </div>
+								<div class="lad-PS-icon"><img src="PS-icon.png"/></div>
+							</div>
+							<div class="lad-head-content">
+								Hello, I'm a <br/> <strong>UX/UI Designer</strong> <br/>
+								Illia Frunza
+							</div>
+							<div class="lad-btn">
+								<button class="lad-btn-hireme"> <a href="#"> Hire me </a><img src="Arrow.svg"></button>
+								<button class="lad-btn-Portfolio"> <a href="#"> Portfolio </a><img src="Arrow.svg"></button> <br/>
+								<button class="lad-btn-telegram"> <img id="telegram-landing" src="telegram.svg"> <a href="#">  Get in touch by Telegram</a><img id="arrow-landing" src="Arrow.svg"></button>
+							</div>
+					</div>
+					<div class="lad-quote">
+						<span class="lad-author">Massimo Vignelli:</span>
+						<blockquote class="lad-quote-content" cite="#">“The life of a designer is a constant struggle. Fight against ugliness. Just like a doctor fights a disease. For us, visual disease is what we have around us, and what we are trying to do is, one way or another, cure the environment through design.”
+						</blockquote>
+					</div>
+					<div class="lad-Portfolio">
+						<h2 class="lad-header-Portfolio">Portfolio</h2>
+						<ul>
+							<li class="lad-img-Dribble"><img src="Dribbble 1.svg"><br><a href="#">App Design</a></li>
+							<li class="lad-img-Behance"><img src="Behance Travel 1.svg"/> <br> <a href="#">Browse Service</a></li>
+							<li class="lad-img-BehanceS"><img src="Behance S.svg"><br><a href="#">Web Design</a></li>
+						</ul>
+						<div class="btn-Portfolio">
+							<span class="see-more">See More</span>
+							<button class="btn-Dribbble"> <a href="#" class="btn-dribbble">Dribbble</a><img src="Arrow.svg"></button>
+							<button class="btn-Behance"> <a href="#" class="btn-Behance"> Behance</a><img src="Arrow.svg"></button>
+							<button class="btn-Figma"> <a href="#" class="btn-Figmafiles">Figma files</a><img src="Arrow.svg"></button>
+						</div>
+						</div>
+						<div class="Reference">
+							<h2 class="head-Reference">Reference</h2>
+							<div class="port-box">
+								<div class="port-Linkedln">
+									<span>CEO of IT2School <br><strong>Valentina Gorodetki</strong></span>
+									<button class="btn-linkedln"><a href="#" >Linkedln</a><img src="Arrow.svg"></img></button>
+									<img id="phone" src="phone.svg" height="60px" width="60px" alt="phone"></img>
+								</div>
+								
+									<div class="port-Telegram">
+										<span>CEO and Founder of Atom Space <br><strong>Ann Derevyanko</strong></span>
+										<button class="port-btn-telegram"><a href="#">Telegram</a><img src="Arrow.svg"></img></button>
+										<img id="phone" src="phone.svg" height="60px" width="60px" alt="phone"></img>
+									</div>
+									<div class="more-information">
+										<button class="port-btn-plus"><img id="port-plus" src="mark-plus.svg"></img><br><a href="#" >You can be next</a></button>
+										
+									</div>
+								</div>
+						</div>
+						<div class="Footer">
+							<div class="footer-1">
+								<p>Based in Maidson, United Kingdom </p>
+							<p>+44 7360 784977 </p>
+							<p>illia_frunza@ukr.net</p>
+							</div>
+							<div class="footer-2">
+								<h3>Portfolio</h3>
+								<a href="#">Dribble</a> <br>
+								<a href="#">Behance</a> <br>
+								<a href="#">Figma Flies</a>
+							</div>
+							<div class="footer-3">
+								<h3>Social media</h3>
+								<a href="#"a>LinkedIn</a> <br>
+								<a href="#">Facbook</a> <br>
+								<a href="#">Instagram</a>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+
+				<section class="mobi-page">
+					<div class="mobi-ava">
+						<div class="mobi-ava-img"> <img src="mobi-ava.svg" alt="Avatar" width="289px" height="314px"/> </div>
+						<div class="mobi-figma-icon"><img src="mobi-figma.svg" width="49px" height="59px"alt="figma-icon"/> </div>
+						<div class="mobi-PS-icon"><img src="mobi-ps.svg" width="49px" height="49px" /></div>
+					</div>
+					<div class="mobi-hello">
+						Hello, I'm a <br/> <strong>UX/UI Designer</strong> <br/>
+						Illia Frunza
+					</div>
+					<div class="mobi-btn">
+						<button class="mobi-btn-hireme"> <a href="#">Hire me</a><img src="Arrow.svg"></button>
+						<button class="mobi-btn-Portfolio"> <a href="#">Portfolio</a> <img src="Arrow.svg"></button>
+						<button class="mobi-btn-telegram"><a href="#">Get in touch by Telegram</a></button>			
+					</div>
+					<div clas="mobi-quote">
+						<p class="mobi-author">Massimo Vignelli:</p><br>
+							<blockquote class="mobi-quote-content" cite="#">“The life of a designer is a constant struggle. Fight against ugliness. Just like a doctor fights a disease. For us, visual disease is what we have around us, and what we are trying to do is, one way or another, cure the environment through design.”
+						</blockquote>
+					</div>
+					<div class="mobi-portfolio">
+						<h2 class="mobi-header-Portfolio">Portfolio</h2>
+						<ul>
+							<li class="mobi-img-Dribble"><img src="Dribbble 1.svg"><br><a href="#">App Design</a></li>
+							<li class="mobi-img-Behance"><img src="Behance Travel 1.svg"/> <br> <a href="#">Browse Service</a></li>
+							<li classs="mobi-img-BehanceS"><img src="Behance S.svg"><br><a href="#">Web Design</a></li>
+						</ul>
+						<div class="mobi-btn-Portfolio">
+							<span class="mobi-see-more">See More</span>
+							<button class="mobi-btn-Dribbble"> <a href="#" class="mobi-btn-dribbble">Dribbble</a><img src="Arrow.svg"></button>
+							<button class="mobi-btn-Behance"> <a href="#" class="mobi-btn-Behance"> Behance</a><img src="Arrow.svg"></button>
+							<button class="mobi-btn-Figma"> <a href="#" class="mobi-btn-Figmafiles">Figma files</a><img src="Arrow.svg"></button>
+						</div>
+					</div>
+					<div class="mobi-reference">
+						<h2 class="mobi-head-Reference">Reference</h2>
+							<div class="mobi-port-box">
+								<div class="mobi-port-linkedin">
+									<span>CEO of IT2School <br><strong>Valentina Gorodetki</strong></span>
+									<button class="mobi-btn-linkedin"><a href="#" >Linkedln</a><img src="Arrow.svg"></img></button>
+									<img id="mobi-phone" src="phone.svg" height="60px" width="60px" alt="phone"></img>
+								</div>
+								
+									<div class="mobi-port-Telegram">
+										<span>CEO and Founder of Atom Space <br><strong>Ann Derevyanko</strong></span>
+										<button class="mobi-port-btn-telegram"><a href="#">Telegram</a><img src="Arrow.svg"></img></button>
+										<img id="mobi-phone" src="phone.svg" height="60px" width="60px" alt="phone"></img>
+									</div>
+									<div class="mobi-more-information">
+										<button class="mobi-port-btn-plus"><img id="mobi-port-plus" src="mark-plus.svg"></img><br><a href="#" >You can be next</a></button>
+										
+									</div>
+								</div>
+					</div>
+					<div class="mobi-footer"></div>
+				</section>
+			</div>
+		</body>
+</html>
